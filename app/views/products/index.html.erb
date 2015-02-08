@@ -1,12 +1,12 @@
 <h1>Products#index</h1>
-<%= link_to "New Product", "#{product_url}/new" %>
+need a link to new product
 
 <ul>
-	<li><% @name do |product|  %></li>
-		<li><%= product.name %></li>
-		<li><%= product.description %></li>
-		<li><%= product.price_in_cents %></li>
-		<li><%= link_to "Show Me", product_url %></li>
+	<li><% @products.each do |productonshow|  %></li>
+		<li><%= productonshow.name %></li>
+		<li><%= productonshow.description %></li>
+		<li><%= productonshow.price_in_cents %></li>
+		<li><a href ="Show Me"></a></li>
 	<% end %></ul>
 
 

@@ -1,10 +1,12 @@
 Rails.application.routes.draw do
-resources :products
+root 'products#index'
 
+resources :products 
 end
 
 
-
+# get 'products/:id' => 'products#show'as: 'product'
+# get '/new' => 'products#new', as: 'New Product'
 
 
 
