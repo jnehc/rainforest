@@ -1,0 +1,79 @@
+
+
+index
+	list of all products + 3 links:
+			signup
+			login
+			new product page
+			each product is displayed with name,deacription, price, link to go to its show page
+
+	signup: page with a form that asks for email/pass
+										> once submitted if email correct, back to hme page, with a message "I successfully signed up" 
+												if not sucessful, form again with alert: email/password are incorrect
+	login 	> page asks for email and password
+							if correct - page and alert saying 'successfully logged in' 
+							if incorret, page rerendered with alert saying email/password are incorrect. 
+	
+index click for new product 
+	> page with form, submitting the form has 3 fields:name, description, and price in cents. 							when submitted
+							> takes me to the show page for a new product.
+	
+on index, if I click a product 
+							 Review page > page with name, description, price and reviews. Each review includes the review itself, who it was written by (username and the date/time it was written
+	
+							also on review page a form with 1 text field user can fill in and submit to create a new review for the product. 
+
+							While still on Review page : If I created the product I see 2 buttons on the page, one to edit, and the other to delete the product. Buttons behave as expected.
+
+
+
+
+
+
+User Stories
+
+As a user...
+
+...on the homepage I am presented with a list of all the products and two links to signup or login, and a third link to create a new product. a. Each product in the list is displayed with its name, description, and price, and has a link to go to its show page.
+
+...if I click on the signup button I am taken to page that has a form that ask for an email and a password. After filling in and submitting the form, if the email and the password are correct, I am taken to the homepage with a message saying I’ve successfully signed up. a. Otherwise the form is rendered again and an alert appears saying my email and/or password are incorrect.
+
+...if I click on the login button I am taken to page that has a form that ask for an email and a password. After filling in and submitting the form, if the email and the password are correct, I am taken to the homepage with a message saying I’ve successfully logged in. a. Otherwise the form is rendered again and an alert appears saying my email and/or password are incorrect.
+
+...if I click to create a new product I am taken to a page with a form. Submitting this form, which has three fields–name, description, and price in cents–takes me to the show page for the new product.
+
+...on the homepage if I click a product I am taken to a page with its name, description, price, and reviews. Each review includes the review itself, who the review was written by (i.e. username), and the date and time it was written at. 
+
+Review Page: The page also has a form with one text field I can fill in and submit to create a new review for the product. a. In addition to that, if I created the product I can see two buttons on the page, one to edit and the other to delete the product. These buttons have the expected behaviour.
+Building This Application
+
+After you’ve gone through the tutorial at least twice to really solidify the new concepts, there is another tutorial on Testing with Rails to add tests to your application.
+
+
+
+
+
+
+
+
+Stretch Assignments
+
+If you have done all of the above, as a stretch you can:
+
+create a profile page for your users
+make sure reviews are sorted by newest first
+create categories for your products
+create the functionality to be able to tag your products
+write beautiful Sass for your application
+Questions
+
+How does the find_by method work?
+What are flash notices and errors? What data type do they resemble?
+How do we define a helper method?
+In which file can we find <%= yield %>? What is it's purpose?
+What are associations? What are the different types of associations?
+Which Rails component is responsible for their implementation?
+What is a before_filter and when does it run?
+How do we create a nested form?
+How have we implemented authorization in Rainforest?
+How do we add a column to a database?

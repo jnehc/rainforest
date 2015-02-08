@@ -1,4 +1,32 @@
 Rails.application.routes.draw do
+resources :products
+
+end
+
+
+
+
+
+
+
+                  # products_index GET  /products/index(.:format) products#index
+                  # products_show GET  /products/show(.:format)  products#show
+                  # products_new GET  /products/new(.:format)   products#new
+                  # products_edit GET  /products/edit(.:format)  products#edit
+
+                  # what is returned after shortcut added
+                  #       Prefix Verb   URI Pattern                  Controller#Action
+                  #     products GET    /products(.:format)          products#index
+                  #              POST   /products(.:format)          products#create
+                  #  new_product GET    /products/new(.:format)      products#new
+                  # edit_product GET    /products/:id/edit(.:format) products#edit
+                  #      product GET    /products/:id(.:format)      products#show
+                  #              PATCH  /products/:id(.:format)      products#update
+                  #              PUT    /products/:id(.:format)      products#update
+                  #              DELETE /products/:id(.:format)      products#destroy
+
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -53,4 +81,3 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-end
