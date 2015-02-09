@@ -31,6 +31,8 @@ li {list-style-type:none; padding:3px;}
 .product_listing {width: 400px;}
 .product_listing li.prodend {margin-bottom:25px; text-align:right;}
 
+
+ .field { margin-bottom:20px;}
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.

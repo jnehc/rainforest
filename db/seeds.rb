@@ -1,4 +1,4 @@
-# Product.destroy_all
+Product.destroy_all
 
 Product.create!(
   :name  => "Extra Old Cheese",
