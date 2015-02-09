@@ -19,6 +19,7 @@ class ProductsController < ApplicationController
     @product = Product.new(product_params)
 
     if @product.save
+    	      # if the save for the picture was successful, go to index.html.erb
       redirect_to products_url
     else
       render :new

@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 root 'products#index'
-
+productsname = "Sweet Cheese 3000&#8482;"
 resources :products 
 end
 

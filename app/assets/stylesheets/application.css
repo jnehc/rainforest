@@ -1,6 +1,6 @@
  
 html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, b, u, i, center, ul, li {
-    	margin: 0;
+    	margin-left: 0;
     	padding: 0;
     	border: 0;
     	font-size: 100%;
@@ -14,11 +14,22 @@ html {
     -ms-text-size-adjust: 100%
 }
 
-a, p, h1, h2, h3, li, {
+.wrapper {margin: 20px 0 0 30px;}
+a { }
+
+p, h1, h2, h3, li, {
     font-family: Arial,sans-serif;
-    font-size: 13px;
+    font-size: 15px;
     font-color: #666;
+    line-height: 17px;
+    margin-bottom: 20px;
     }
+
+ul {background-color: #eee;}
+li {list-style-type:none; padding:3px;}
+
+.product_listing {width: 400px;}
+.product_listing li.prodend {margin-bottom:25px; text-align:right;}
 
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files

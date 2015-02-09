@@ -1,16 +1,17 @@
-<h1>Products#index</h1>
-need a link to new product
-
+<h2><%= link_to "Add A Product", "#{products_url}/new" %></h2>
+<div class="product_listing">
 <ul>
 	<li><% @products.each do |productonshow|  %></li>
 		<li><%= productonshow.name %></li>
 		<li><%= productonshow.description %></li>
 		<li><%= productonshow.price_in_cents %></li>
-		<li><a href ="Show Me"></a></li>
+		<li class="prodend"><%= link_to "Show Me", "have tried to many thing here-not sure" %></li>
 	<% end %></ul>
 
+</div>
 
-<p>Find me in app/views/products/index.html.erb</p>
+<p>SIGN UP  |  LOGIN</p>
+
 
 
 

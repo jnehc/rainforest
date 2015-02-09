@@ -1,19 +1,19 @@
 Product.create!(
   :name  => "Extra Old Cheese",
   :description => "3 and 5 Year Old Heritage Cheddar is aged from 36 and 60 months respectively, and is available through our store in pre-packed quantities, random weights and 10 pound blocks.",
-  :price_in_cents => "8.00"
+  :price_in_cents => "BigDecimal.8"
   )
 
 Product.create!(
   :name  => "Kind of old Cheese",
   :description => "1 Year Old Heritage Cheddar is aged from 1 and 12 months respectively, and is available through our store in pre-packed quantities, random weights and 10 pound blocks.",
-  :price_in_cents => "5.00"
+  :price_in_cents => "BigDecimal.5.50"
 )
 
 Product.create!(
   :name  => "Really Cheesy Cheese",
   :description => "Young Cheddar is aged for 1 month only, and is available through our store in pre-packed quantities, random weights and 10 pound blocks.",
-  :price_in_cents => "3.00"
+  :price_in_cents => "BigDecimal.3.43"
 )
 
 
