@@ -1,12 +1,14 @@
 <h2><%= link_to "Add A Product", "#{products_url}/new" %></h2>
 <div class="product_listing">
 <ul>
-	<li><% @products.each do |productonshow|  %></li>
-		<li><%= productonshow.name %></li>
-		<li><%= productonshow.description %></li>
-		<li><%= productonshow.price_in_cents %></li>
-		<li class="prodend"><%= link_to "Show Me", "have tried to many thing here-not sure" %></li>
+	<li><% @products.each do |product|  %></li>
+		<li>Product Name: <%= product.name %></li>
+		<li>Product Description: <%= product.description %>
+		<li>Product Price: <%= product.formatted_price %></li>
+<!-- add Product.formatted_price -->
+		<li class="prodend"><%= link_to "See Product", product_path(product) %></li>
 	<% end %></ul>
+	<!-- /products/:id(.:format)  product_path(@product)    product_params-->
 
 </div>
 

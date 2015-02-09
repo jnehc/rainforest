@@ -1,7 +1,12 @@
 Rails.application.routes.draw do
+
+get 'users/new'
+get 'users/create'
+
 root 'products#index'
-productsname = "Sweet Cheese 3000&#8482;"
 resources :products 
+resources :users, only: [:new, :create]
+
 end
 
 
