@@ -1,13 +1,20 @@
 Rails.application.routes.draw do
+  # get 'reviews/show'
+
+  # get 'reviews/create'
+
+  # get 'reviews/destroy'
+
 resources :products 
 resources :users, only: [:new, :create]
 
 resources :sessions, only: [:new, :create, :destroy]
 get 'users/new'
 get 'users/create'
-
+  resources :products do
+    resources :reviews, only: [:show, :create, :destroy]
+  end
 end
-
 
 # get 'products/:id' => 'products#show'as: 'product'
 # get '/new' => 'products#new', as: 'New Product'
